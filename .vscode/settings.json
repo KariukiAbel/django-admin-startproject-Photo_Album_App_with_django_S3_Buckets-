@@ -1,0 +1,12 @@
+{
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.autoSave": "afterDelay",
+    "emmet.excludeLanguages": [
+
+        "markdown"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
