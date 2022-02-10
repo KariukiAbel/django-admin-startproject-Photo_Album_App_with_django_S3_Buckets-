@@ -1,0 +1,12 @@
+{% extends 'main.html' %}{% block contents %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col">
+            <a class="btn btn-dark my-3" href="{% url 'gallery' %}">Go Back</a>
+            <div style="height: 90vh;">
+                <img style="max-height: 100%; max-width: 100%;" src="{{photo.image.url}}" alt="">
+                <p>{{photo.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
