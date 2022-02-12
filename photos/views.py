@@ -27,7 +27,7 @@ def addPhoto(request):
         image = request.FILES.get('image')
         
         if data['category'] != 'none':
-            category = Category.object.get(id=data['category'])
+            category = Category.objects.get(id=data['category'])
         elif data['category_new'] != '':
             category, created = Category.objects.get_or_create(name=data['category_new'])
         else: 
